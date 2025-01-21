@@ -1,14 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from "./login/login.component";
+import { Component } from '@angular/core'; // importa o componente
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, LoginComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+@Component({ // define o componente
+  selector: 'app-root', // nome do componente
+  templateUrl: './app.component.html', // define o arquivo html
+  styleUrls: ['./app.component.css'] // define o arquivo css
 })
-export class AppComponent {
-  title = 'estagioTeste';
+export class AppComponent { // exporta a classe
+  title = 'Minha Aplicação'; // define o título da aplicação
 }
